@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>survey</title>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to our fabulous survey</h1>
+      <h2>Please write your name down</h2>
+      <form id="name">
+        <div class="form-group">
+          <label for="first-name">First name</label>
+          <input id="first-name" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last name</label>
+          <input id="last-name" class="form-control" type="text">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="born">Date of birth:</label>
+          <input id="born" class="form-control" type="date">
+        </div>
+        <br>
+        <h2>Your favorite food</h2>
+        <select class="form-control" id="food">
+          <option>Pizza</option>
+          <option>Burgers</option>
+          <option>Sushi</option>
+          <option>Pasta</option>
+        </select>
+
+          <h3>Your favorite sweet</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="sweets" value="chocolate" checked>
+              Chocolate
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="sweets" value="cheesecake" checked>
+              Cheesecake
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="sweets" value="muffin" checked>
+              Muffin
+            </label>
+          </div><div class="radio">
+            <label>
+              <input type="radio" name="sweets" value="icecream" checked>
+              Icecream
+            </label>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="color">What is your favorite color?</label>
+            <input id="color" class="form-control" type="color">
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+
+        <div id="result">
+        <h1>Result of your servey</h1>
+        <p>your name is <span class="first-name"></span></p>
+        <p>your last name is <span class="last-name"></span></p>
+        <p>your favorite food is <span class="food"></span></p>
+        <p>your favorite sweet is <span class="sweet"></span></p>
+        <p>your favorite color is <span class="color"></span></p>
+
+      </div>
+
+
+</html>
